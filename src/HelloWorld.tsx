@@ -43,6 +43,11 @@ export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = ({
 		[0, 1],
 		[0, -150]
 	);
+	const logoTranslationDown = interpolate(
+		logoTranslationProgress,
+		[0, 1],
+		[0, 150]
+	);
 
 	// Fade out the animation at the end
 	const opacity = interpolate(
@@ -60,6 +65,9 @@ export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = ({
 		<AbsoluteFill style={{backgroundColor: 'white'}}>
 			<AbsoluteFill style={{opacity}}>
 				<AbsoluteFill style={{transform: `translateY(${logoTranslation}px)`}}>
+					<Logo logoColor1={logoColor1} logoColor2={logoColor2} />
+				</AbsoluteFill>
+				<AbsoluteFill style={{transform: `translateY(${logoTranslationDown}px)`}}>
 					<Logo logoColor1={logoColor1} logoColor2={logoColor2} />
 				</AbsoluteFill>
 				{/* Sequences can shift the time for its children! */}
