@@ -11,6 +11,14 @@
 
 Welcome to your Remotion project!
 
+I heard about Remotion while filling out some job applications and thought I should play around with it. This is the result of that effort. I opted to use the [Typescript template](https://www.remotion.dev/templates/hello-world) (default) because my Typescript is weak, and I ended up having to learn about [Zod](https://zod.dev/) as well. It wasn't the smoothest reintroduction to Typescript.
+
+This project requires Node.js version 16+ and was developed on Ubuntu 22.04.3 (on Windows, through WSL2) with Node.js version 20.12.2.
+
+When you launch this project with `npm start` a browser will open with a non-linear editor displaying the video results of the written code. No editing can actually be done in that view. All editing is done in code.
+
+If you'd like to do something like this from scratch, I recommend going to the [Remotion Documentation](https://www.remotion.dev/docs/) and choosing what's right for you.
+
 ## Commands
 
 **Install Dependencies**

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My Remotion video",
   "repository": {},
+  "engines" : { 
+    "node" : ">=16.0.0"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "@remotion/cli": "4.0.140",
