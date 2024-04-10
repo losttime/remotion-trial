@@ -65,10 +65,10 @@ export const HelloWorld: React.FC<z.infer<typeof myCompSchema>> = ({
 		<AbsoluteFill style={{backgroundColor: 'white'}}>
 			<AbsoluteFill style={{opacity}}>
 				<AbsoluteFill style={{transform: `translateY(${logoTranslation}px)`}}>
-					<Logo logoColor1={logoColor1} logoColor2={logoColor2} />
+					<Logo logoColor1={logoColor1} logoColor2={logoColor2} spinsClockwise />
 				</AbsoluteFill>
 				<AbsoluteFill style={{transform: `translateY(${logoTranslationDown}px)`}}>
-					<Logo logoColor1={logoColor1} logoColor2={logoColor2} />
+					<Logo logoColor1={logoColor1} logoColor2={logoColor2} spinsClockwise={false} />
 				</AbsoluteFill>
 				{/* Sequences can shift the time for its children! */}
 				<Sequence from={35}>

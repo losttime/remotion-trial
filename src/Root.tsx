@@ -38,6 +38,7 @@ export const RemotionRoot: React.FC = () => {
 				defaultProps={{
 					logoColor1: '#91dAE2' as const,
 					logoColor2: '#86A8E7' as const,
+					spinsClockwise: true,
 				}}
 			/>
 		</>
